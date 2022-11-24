@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.1s;
+}
+.number{
+    display: flex;
+    /* background-color: red; */
+    width: 100%;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.pokegallery .Loader{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #f7f7f9;
+}
+.pokegallery .Loader img{
+    width: 50%;
+    height: 80%;
+}
+.loader .cargaLogo{
+    width: 5px;
+}
+.informacion{
+    text-transform: uppercase;
+}
+.informacion h5{
+    color: rgb(97, 97, 97);
+}
+.informacion h6{
+    color: rgb(97, 97, 97);
+}
+.pokemonesFather{
+    display: flex;
+}
+.pokegallery{
+    padding: 2rem 0 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f9
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    box-shadow: 10px 8px rgb(0, 0, 0);
+    margin: 10px;
+    padding: 10px;
+    width: 20rem; 
+    height: 28rem;
+    font-size: 3rem; 
+    background-color: #F0F0C9; 
+    cursor: pointer;
+}
+.card:hover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    box-shadow: 10px 8px rgba(68, 68, 68, 0.932);
+    margin: 9.5px;
+    padding: 10.5px;
+    width: 20.5rem; 
+    height: 28.5rem;
+    font-size: 3.3rem; 
+    background-color: #F0F0C9; 
+    cursor: pointer;
+    animation-name: stretch;
+            animation-duration: 0.5s;
+            animation-timing-function: ease-in;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-play-state: running;
+}
+.card div{
+    text-align: center;
+    /* background-color: black; */
+}
+.card img{
+    width: 15rem;
+    /* background-color: red; */
+}
+@keyframes stretch {
+    0% { opacity: 75%; }
+  
+    50% { opacity: 85%; }
+  
+    100% { opacity: 100%; }
+}
